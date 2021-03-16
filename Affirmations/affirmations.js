@@ -20,7 +20,6 @@ const handleClick = (e) => {
     toggleCount += 1
     generateQuote()
     prevButton.disabled = false
-
   }
 }
 
