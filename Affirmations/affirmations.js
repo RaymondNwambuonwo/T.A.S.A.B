@@ -8,15 +8,6 @@ let quoteData = null
 const handleClick = (e) => {
   e.preventDefault()
   let { target } = e
-  console.log(target.innerHTML)
-
-  // if (target.innerHTML === 'Next') {
-  //   toggleCount += 1
-  //   generateQuote()
-  // } else {
-  //   toggleCount -= 1
-  //   generateQuote()
-  // }
 
   const prevButton = document.querySelector('.Previous')
   if (toggleCount === 0 && target.innerHTML === 'Previous') {
@@ -40,8 +31,11 @@ const displayErr = () => {
 
 const createButtons = () => {
   const buttons = ['Previous', 'Next']
+
   const buttonContainer = document.createElement('div')
+
   buttonContainer.className = 'bttn-container'
+
   const listOfButtons = buttons.map(button => {
     const createdButton = document.createElement('button')
     createdButton.innerHTML = button
@@ -64,9 +58,9 @@ const getQuoteData = () => {
 }
 
 const generateQuote = () => {
-
   const quoteText = quoteData[toggleCount].text
   const quoteAuthor = quoteData[toggleCount].author
+
   let authorHeader = document.querySelector('.author-header');
   let contentPara = document.querySelector('.content-para');
 
@@ -80,5 +74,3 @@ const generateQuote = () => {
 
 getQuoteData()
 createButtons()
-
-
