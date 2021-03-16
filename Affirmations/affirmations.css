@@ -1,0 +1,15 @@
+.main {
+  /* background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%); */
+  background-color: #f5f5dc;
+  /* background-image: url(../Images/solar.png); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: green;
+  font-family: "Akaya Telivigala", cursive;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
