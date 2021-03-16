@@ -12,6 +12,7 @@ const handleClick = (e) => {
   const prevButton = document.querySelector('.Previous')
   if (toggleCount === 0 && target.innerHTML === 'Previous') {
     prevButton.disabled = true
+    displayErr()
   } else if (target.innerHTML === 'Previous') {
     toggleCount -= 1
     generateQuote()
@@ -26,7 +27,7 @@ const handleClick = (e) => {
 
 const displayErr = () => {
   const errContainer = document.querySelector('#error-message')
-  errContainer.innerHTML = 'There are '
+  errContainer.innerHTML = 'No more previous affirmations please press next to see a new affirmation'
 }
 
 const createButtons = () => {
