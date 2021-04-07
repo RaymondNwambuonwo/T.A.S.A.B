@@ -21,6 +21,9 @@
 
 const body = document.querySelector(".main");
 const url1 = "https://api.quotable.io/random";
+
+setInterval(generateQuote(), 1000);
+
 function generateQuote() {
   fetch(url1)
     .then((data) => data.json())
@@ -39,4 +42,3 @@ function generateQuote() {
     .catch((err) => console.log(err));
 }
 // Repeat generateQuote() every 10 seconds
-setInterval(generateQuote(), 1000);
