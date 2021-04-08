@@ -117,6 +117,10 @@ section {
   z-index: 3;
 }
 
+.slogan-para {
+  display: none;
+}
+
 .slider {
   position: absolute;
   top: 0;
@@ -135,10 +139,31 @@ section {
     background: white;
     margin: 5px;
   }
+  /* .slider {
+    display: none;
+  } */
+  .slogan {
+    display: none;
+  }
+  .slogan-para {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10rem;
+    color: cadetblue;
+  }
+  .yogster {
+    display: none;
+  }
+  .yogster img {
+    display: none;
+  }
+  .yogster::after {
+    display: none;
+  }
   nav {
     position: relative;
   }
-
   .hamburger {
     position: absolute;
     cursor: pointer;
@@ -147,7 +172,6 @@ section {
     transform: translate(-5%, -50%);
     z-index: 2;
   }
-
   .nav-links {
     position: fixed;
     background: wheat;
